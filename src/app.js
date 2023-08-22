@@ -55,10 +55,8 @@ function handleSubmit(event) {
 }
 function displayFahrenheitTemperature(event) {
     event.preventDefault();
-   
-    let fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32
-   
     let temperatureElement = document.querySelector('#temperature');
+    let fahrenheitTemperature = (celsiusTemperature * 9 / 5) + 32;
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 let celsiusTemperature = null;
@@ -67,7 +65,7 @@ let celsiusTemperature = null;
   form.addEventListener('submit', handleSubmit);
 
   let fahrenheitLink = document.querySelector('#fahrenheit-link');
-  fahrenheitLink,addEventListener('click', displayFahrenheitTemperature);
+  fahrenheitLink.addEventListener('click', displayFahrenheitTemperature);
 
   search('Lisbon');
 
