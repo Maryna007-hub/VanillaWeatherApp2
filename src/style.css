@@ -52,4 +52,14 @@ li:first-letter {
     font-size: 16px;
     top: -30px;
 }
-
+.weather-temperature .active {
+    color: rgb(32, 26, 26);
+    cursor: default; 
+    text-decoration: none; 
+}
+.weather-temperature .active:hover {
+    text-decoration: none;
+}
+.weather-temperature .active1 {
+    text-decoration: none; 
+}
