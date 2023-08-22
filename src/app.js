@@ -43,7 +43,7 @@ function displayTemperature(response) {
 function search(event) {
     event.preventDefault();
     let cityInputElement = document.querySelector('#city-input');
-    console.log(cityInputElement);
+    console.log(cityInputElement.value);
 }
 
 let apiKey = "ed7bf7f5cf99619f0aa2717501c76f85";
@@ -51,6 +51,6 @@ let city = 'Oslo';
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 
-  let form = document.querySelector('#seatch-form');
+  let form = document.querySelector('#search-form');
   form.addEventListener('submit', search);
 
